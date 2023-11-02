@@ -59,3 +59,30 @@
 //     console.log("a ::",a );
 // }
 
+// #7: Calculate the sum of odd numbers greater than 10 and less than 30
+
+// for(let i=1;i<=30;i++){
+//     // console.log("herher",i);
+//     if(i>10 && i<=30){
+//         if(i % 2 !== 0){
+//             console.log("Odd numers from 10-30",i);
+//         }
+//     }
+// }
+
+// #8: Create a function that will convert from Celsius to Fahrenheit
+
+// function celciusToFarh(celc){
+//     return ((cels*9.0/5.0) + 32)
+// }
+// const cels = 0
+// console.log(celciusToFarh(cels));
+
+function FarhToCelcius(farh){
+    return (farh-32) * 5/9;
+}
+const farh = 212
+console.log(FarhToCelcius(farh));
+
+
+
