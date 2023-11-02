@@ -72,17 +72,74 @@
 
 // #8: Create a function that will convert from Celsius to Fahrenheit
 
+// #1
 // function celciusToFarh(celc){
 //     return ((cels*9.0/5.0) + 32)
 // }
 // const cels = 0
 // console.log(celciusToFarh(cels));
 
-function FarhToCelcius(farh){
-    return (farh-32) * 5/9;
+// #9: Create a function that will convert from Fahrenheit to Celsius
+
+// function FarhToCelcius(farh){
+//     return (farh-32) * 5/9;
+// }
+// const farh = 212
+// console.log(FarhToCelcius(farh));
+
+// #10: Calculate the sum of numbers in an array of numbers
+
+// let sum = 0
+// function sumArray(arrayNumbers){
+//     for(let i = 0;i<arrayNumbers.length;i++){
+//         // console.log(arrayNumbers[i]);
+//         sum += arrayNumbers[i]
+//     }
+//     // console.log(sum);
+//     return sum; 
+// }
+// const arrayNumbers = [1,2,6,3,23,57,45,58,4,35,44,54]
+// console.log(sumArray(arrayNumbers));
+
+
+// #11: Calculate the average of the numbers in an array of numbers
+// function findAvg(arrNum){
+//     let sum=0;
+//     let avgNum;
+//     for(let i=0;i < arrNum.length;i++){
+//         console.log(arrNum[i]);
+//          sum += arrNum[i]
+//          avgNum = arrNum.length
+//     }
+//     return data = sum/avgNum
+// }
+// let arr = [2,5,6,46,7,8,4,5,5,6,6,4,4,6,3]
+// console.log(findAvg(arr));
+
+
+// #12: Create a function that receives an array of numbers and returns an array containing only the positive numbers
+// function positiveNumbr(normalNumb){
+//     let positiveNumb = []
+//     for(let i=0;i<normalNumb.length;i++){
+//         if(normalNumb[i]%2===0){
+//             positiveNumb.push(normalNumb[i])
+//         }
+//     }
+//     return positiveNumb
+// }
+// let numb = [16,47,3,5,6,7,567,7657,3,5,35,43,52,6,56,68,6579,7896,6,4,3468,9,0,98,7654,32,4,567,8,9,86,5,4,56,8,90,54,3,]
+// console.log(positiveNumbr(numb));
+
+// #13: Find the maximum number in an array of numbers
+function maxNumb(numb){
+    let FirstNumb=numb[0]
+    // console.log("FirstNumb ::",FirstNumb);
+    for(i=0;i<numb.length;i++){
+        if(numb[i]>FirstNumb){
+            FirstNumb=numb[i]
+        }
+    }
+    return FirstNumb
 }
-const farh = 212
-console.log(FarhToCelcius(farh));
-
-
-
+let num = [16,47,3,5,6,7,567,7657,3,5,35,43,52,6,56,68,6579,7896,6,4,3468,9,0,98,7654,32,4,567,8,9,86,5,4,56,8,90,54,3,]
+console.log(maxNumb(num));
