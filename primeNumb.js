@@ -32,50 +32,33 @@
 //   console.log(9, " is prime? ", isPrime(9)); // Output: 9 is prime? false
 
 
-// function findPythagoreanTriplets(limit) {
-//     const triplets = [];
-  
-//     for (let a = 1; a <= limit; a++) {
-//         console.log("a,b",a );
-//       for (let b = a + 1; b <= limit; b++) {
-//         console.log(b ,"b os jere", "== ++=======",a * a + b * b);
-//         const c = Math.sqrt(a * a + b * b);
-//         console.log("c valu",c);
-//         if (c === Math.floor(c) && c <= limit) {
-//             console.log("a,b,c,", a,b, c);
-//           triplets.push([a, b, c]);
-//         }
-//     }
-// }
-// console.log("triplets ::::",triplets);
-  
-//     return triplets;
-//   }
-  
-//   // Find Pythagorean triplets with a limit (e.g., 20)
-//   const limit = 20;
-//   const triplets = findPythagoreanTriplets(limit);
-  
-//   // Print the Pythagorean triplets
-//   console.log(`Pythagorean Triplets with a limit of ${limit}:`);
-//   triplets.forEach((triplet) => {
-//     console.log(triplet.join(', '));
-//   });
-  
-let primeOrNot = true
-function isPrime(num){
-    console.log(num);
-    for(i=2;i<num;i++){
-        if(num%2===0){
-            console.log(`${num} is not a prime number`);
-            primeOrNot = false
+
+
+function isPrime(n)
+{
+    if (n < 2)
+        return false;
+        
+    if (n == 2)
+        return true;
+    
+    var maxDiv = Math.sqrt(n);
+    
+    for(var i = 2; i <= maxDiv; i++)
+    {
+        if (n % i == 0)
+        {
+            return false;
         }
     }
-    if(primeOrNot === true){
-        console.log(`${num} is a prime number`);
-    }else{
-        console.log(`${num} is not a prime number`);
-    }
+    
+    return true;
 }
-number = 4;
-isPrime(number);
+
+console.log(0, " is prime? ", isPrime(0));
+console.log(2, " is prime? ", isPrime(2));
+console.log(3, " is prime? ", isPrime(3));
+console.log(4, " is prime? ", isPrime(4));
+console.log(5, " is prime? ", isPrime(5));
+console.log(21, " is prime? ", isPrime(21));
+console.log(27, " is prime? ", isPrime(27));

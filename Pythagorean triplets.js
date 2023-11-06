@@ -32,7 +32,7 @@ function pytha(number){
             let c = Math.sqrt(a*a+b*b) 
             // console.log("the output is here ::",c);
             if(c === Math.floor(c) && c <= num && !usedCValues.has(c)){
-                console.log("usedCValues ::",usedCValues);
+                // console.log("usedCValues ::",usedCValues);
                 usedCValues.add(c);
                 tripplets.push([a,b,c])
             }
