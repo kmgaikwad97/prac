@@ -145,7 +145,7 @@
 // console.log(maxNumb(num));
 
 
-// #14: #14: Print the first 10 Fibonacci numbers without recursion
+// #14: Print the first 10 Fibonacci numbers without recursion
 // let f0 = 0;
 // // console.log(f0);
 
@@ -184,3 +184,85 @@
 
 
 // PRime 
+// #16: Create a function that will return a Boolean 
+// specifying if a number is prime
+
+// function isPrime(n){
+//     if(n < 2){
+//         return false
+//     }
+//     if(n===2){
+//         return true
+//     }
+//     let maxLengthData = Math.sqrt(n)
+//     for(let i =0;i<=maxLengthData;i++){
+//         if(n&i === 0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(0, " is prime? ", isPrime(0));
+// console.log(1, " is prime? ", isPrime(1));
+// console.log(2, " is prime? ", isPrime(2));
+// console.log(3, " is prime? ", isPrime(3));
+// console.log(4, " is prime? ", isPrime(4));
+// console.log(5, " is prime? ", isPrime(5));
+// console.log(21, " is prime? ", isPrime(21));
+// console.log(27, " is prime? ", isPrime(27));
+
+
+// #17: Calculate the sum of digits of a 
+// positive integer number
+
+// let sum;
+// function sumNo(n){
+//     let numb = n.toString();
+//     // console.log(typeof numb);
+
+//     for(let char of numb){
+//         // console.log("char ::",char);
+//         let digit = parseInt(char)
+//         // console.log(digit,"sdf");
+//         sum=+digit
+//     }
+//     return sum
+// }
+// sum = sumNo(123456789)
+// console.log(sum);
+
+
+
+// // #18: Print the first 100 prime numbers
+// print100Prime(100)
+// function print100Prime(primeNumber){
+//     i=1
+//     n=0
+//     while(i<=primeNumber){
+//         if(isPrime(n)){
+//             console.log(i,"==>",n);
+//             i++
+//         }
+//         n++
+//     }
+// }
+
+// function isPrime(num){
+//     if(num<2){
+//         return false;
+//     }
+//     if(num===2){
+//         return true;
+//     }
+//     let maxLengthData = Math.sqrt(num)
+//     for(let i=2;i<=maxLengthData;i++){
+//         if(num%i===0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// // console.log(isPrime(0));
+
+
+
