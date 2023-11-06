@@ -127,19 +127,60 @@
 //     }
 //     return positiveNumb
 // }
-// let numb = [16,47,3,5,6,7,567,7657,3,5,35,43,52,6,56,68,6579,7896,6,4,3468,9,0,98,7654,32,4,567,8,9,86,5,4,56,8,90,54,3,]
+// let numb = [16,47,3,5,6,7,567,7657,3,5,35,43,52,6,56,68,6579,7896,6,4,3468,9,0,98,7654,32,4,567,8,9,86,5,4,56,8,90,54,3]
 // console.log(positiveNumbr(numb));
 
 // #13: Find the maximum number in an array of numbers
-function maxNumb(numb){
-    let FirstNumb=numb[0]
-    // console.log("FirstNumb ::",FirstNumb);
-    for(i=0;i<numb.length;i++){
-        if(numb[i]>FirstNumb){
-            FirstNumb=numb[i]
-        }
-    }
-    return FirstNumb
-}
-let num = [16,47,3,5,6,7,567,7657,3,5,35,43,52,6,56,68,6579,7896,6,4,3468,9,0,98,7654,32,4,567,8,9,86,5,4,56,8,90,54,3,]
-console.log(maxNumb(num));
+// function maxNumb(numb){
+//     let FirstNumb=numb[0]
+//     // console.log("FirstNumb ::",FirstNumb);
+//     for(i=0;i<numb.length;i++){
+//         if(numb[i]>FirstNumb){
+//             FirstNumb=numb[i]
+//         }
+//     }
+//     return FirstNumb
+// }
+// let num = [16,47,3,5,6,7,567,7657,3,5,35,43,52,6,56,68,6579,7896,6,4,3468,9,0,98,7654,32,4,567,8,9,86,5,4,56,8,90,54,3]
+// console.log(maxNumb(num));
+
+
+// #14: #14: Print the first 10 Fibonacci numbers without recursion
+// let f0 = 0;
+// // console.log(f0);
+
+// let f1 = 1;
+// // console.log(f1);
+
+// for (let i = 2; i < 10; i++) {
+//     let fibo = f1 + f0;
+//     console.log("final fibo" ,fibo);
+
+//     f0 = f1;
+//     // console.log("f0 ::",f0);
+//     f1 = fibo;
+//     // console.log("f1 ::",f1);
+// }
+
+
+// #15: Create a function that will find the nth Fibonacci number using recursion
+
+// function fiboFinder(num){
+//     let fib = [0, 1];   // fib = [0,1,1]
+//     for (let i = 2; i <= num; i++) {    
+//         // fib[i]=fib[i-1]+fib[i-2] // storing in array
+//         // Calculate the next Fibonacci number by adding the last two numbers
+//         let nextFib = fib[i - 1] + fib[i - 2];  // fib[1] + fib[0]   //  1 + 0
+//         // console.log("nextFib ",nextFib);
+//         fib.push(nextFib); // Add the next Fibonacci number to the array
+//       }
+//       for (let i = 0; i <= num; i++) {
+//         //   console.log(fib[i]);
+//         }
+//         return fib[10]
+//     //   console.log("final output",fib[10]);
+// }
+// console.log(fiboFinder(10));
+
+
+// PRime 
