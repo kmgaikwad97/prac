@@ -264,5 +264,72 @@
 // }
 // // console.log(isPrime(0));
 
+// #19: Create a function that will return in an array the first "nPrimes" prime numbers greater than a particular number "startAt"
 
+// console.log(getPrimes(10, 100));
+
+// function getPrimes(nPrimes, startAt)
+// {
+//     let ar = [];
+//     let i = startAt;
+//     while(ar.length < nPrimes)
+//     {
+//         if (isPrime(i))
+//         {
+//             ar.push(i);
+//         }   
+//         i++;
+//     }   
+//     return ar;
+// }
+// // Returns true if a number is prime
+// function isPrime(n)
+// {
+//     if (n < 2)
+//         return false;
+//     if (n == 2)
+//         return true;
+//     let maxDiv = Math.sqrt(n);
+//     for(let i = 2; i <= maxDiv; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+console.log(getNum(10,100));
+
+function getNum(nPrimes,startsAt){
+    let arr =[];
+    let i=startsAt;
+    while(arr.length < nPrimes){
+        if(isPrime(i)){
+            arr.push(i)
+        }
+        i++;
+    }
+    return arr
+}
+
+// Returns true if a number is a prime 
+
+function isPrime(num){
+if(num<2){
+    return false;
+}
+if(num===2){
+    return true
+}
+let maxLengthData = Math.sqrt(num)
+for(let i=0;i<maxLengthData;i++){
+    if(num%i===0){
+        return false;
+    }
+}
+return true
+}
+// console.log(isPrime(1));
 

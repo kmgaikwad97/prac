@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+</head>
+<style>
+    .img-fluid{
+        max-width: 100%;
+        height: 100% !important;
+    }
+    figure{
+        width: 50%;
+    }
+    .container{
+        display: flex;
+    flex-direction: column;
+    }
+    .my-images{
+        display: flex;
+    width: 100%;
+    max-height: 700px;
+    }
+    .text-center{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="my-images">
+            <figure class="text-center">
+                <img src="images/1.jpg" class="img-fluid" alt="">
+            </figure>
+            <figure class="text-center">
+                <img src="images/2.jpg" class="img-fluid" alt="">
+            </figure>
+        </div>
+        <div class="my-images">
+            <figure class="text-center">
+                <img src="images/3.jpg" class="img-fluid" alt="">
+            </figure>
+            <figure class="text-center">
+                <img src="images/4.jpg" class="img-fluid" alt="">
+            </figure>
+        </div>
+</div>
+</body>
+</html>
