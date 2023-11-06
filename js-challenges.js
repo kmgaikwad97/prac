@@ -300,36 +300,57 @@
 //     return true;
 // }
 
-console.log(getNum(10,100));
+// // #20: Rotate an array to the left 1 position
 
-function getNum(nPrimes,startsAt){
-    let arr =[];
-    let i=startsAt;
-    while(arr.length < nPrimes){
-        if(isPrime(i)){
-            arr.push(i)
-        }
-        i++;
-    }
-    return arr
-}
+// const arr = [1,2,3]
+// rotate(arr)
+// console.log(arr);
 
-// Returns true if a number is a prime 
+// function rotate(arr){
+//     let shift = arr.shift()
+//     arr.push(shift)
+// }
 
-function isPrime(num){
-if(num<2){
-    return false;
-}
-if(num===2){
-    return true
-}
-let maxLengthData = Math.sqrt(num)
-for(let i=0;i<maxLengthData;i++){
-    if(num%i===0){
-        return false;
-    }
-}
-return true
-}
-// console.log(isPrime(1));
+// // #21: Rotate an array to the right 1 position
+
+// const arr = [1,2,3]
+// rotate(arr)
+// console.log(arr);
+
+// function rotate(arr){
+//     let shift = arr.pop()
+//     arr.unshift(shift)
+// }
+
+// #22: Reverse an array
+// let arr1 = [1,2,3,4,5]
+// let arr2 = reverseArray(arr1)
+// console.log(arr2);
+
+// function reverseArray(arr1){
+//     let arr2 = []
+//     for(let i=arr1.length-1;i>=0;i--){
+//         arr2.push(i)
+//     }
+//     return arr2
+// }
+
+// Coding challenge #23: Reverse a string
+
+// var s = reverseString("JavaScript");
+// console.log(s);
+
+// function reverseString(s)
+// {
+//     var s2 = "";
+    
+//     for(var i = s.length - 1; i >= 0; i--)
+//     {
+//         var char = s[i];
+//         s2 += char;
+//     }
+    
+//     return s2;
+// }
+
 
