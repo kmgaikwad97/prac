@@ -335,7 +335,7 @@
 //     return arr2
 // }
 
-// Coding challenge #23: Reverse a string
+// #23: Reverse a string
 
 // var s = reverseString("JavaScript");
 // console.log(s);
@@ -343,14 +343,56 @@
 // function reverseString(s)
 // {
 //     var s2 = "";
-    
+
 //     for(var i = s.length - 1; i >= 0; i--)
 //     {
 //         var char = s[i];
 //         s2 += char;
 //     }
-    
+
 //     return s2;
+// }
+
+// #24: Create a function that will merge two arrays 
+// and return the result as a new array
+// let arr1 = [1, 2, 3]
+// let arr2 = [4, 5, 6]
+// let arr = [];
+// const op = mergeArray(arr1, arr2)
+// console.log(op);
+// function mergeArray(arr1, arr2) {
+//     for (let el of arr1) {
+//         arr.push(el)
+//     }
+//     for (let el of arr2) {
+//         arr.push(el)
+//     }
+//     return arr
+// }
+
+// #25: Create a function that will receive two arrays 
+// of numbers as arguments and return an array composed of all the numbers 
+// that are either in the first array or second array but not in both
+
+// let ar1 = [1, 2, 3, 10, 5, 3, 14];
+// let ar2 = [1, 4, 5, 6, 14];
+// let arr = [];
+// const op = mergeArray(ar1, ar2)
+// console.log(op);
+// function mergeArray(arr1, arr2) {
+//     for (let el of arr1) {
+//         // console.log(el);
+//         if(!arr2.includes(el)){
+//             arr.push(el)
+//         }
+//     }
+//     for (let el of arr2) {
+//         // console.log(el);
+//         if(!arr1.includes(el)){
+//             arr.push(el)
+//         }
+//     }   
+//     return arr
 // }
 
 
