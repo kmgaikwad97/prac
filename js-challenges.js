@@ -396,3 +396,51 @@
 // }
 
 
+// #26: Create a function that will receive two arrays and will return an array with elements that are in the first array but not in the second
+
+// var arr1 = [1, 2, 3, 10, 5, 3, 14];
+// var arr2 = [-1, 4, 5, 6, 14];
+// let arr = [];
+
+// const op = mergeLeft(arr1,arr2)
+// console.log("output ::",op);
+
+// function mergeLeft(arr1,arr2){
+//     for(let el of arr1){
+//        if (!arr2.includes(el)){
+//         // console.log(el);
+//         arr.push(el)
+//        }
+//     }
+//     return arr;
+// }
+
+// #27: Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
+
+let numbArr = [1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100] 
+
+let data = getDistinctNumb(numbArr)
+    console.log("data ::",data);
+
+function getDistinctNumb(numbers){
+    // console.log("numbers",numbers);
+    let arr=[];
+    for(let j=0;j<numbers.length;j++){
+        if(isInArray(numbers[j],numbers)){
+            arr.push(numbers[j])
+        }
+    }
+    return numbers
+}
+function isInArray(n,ar){
+    // console.log("Values ::",n,ar);
+    for(let i = 0;i<ar.length;i++){
+        if(ar[i]===n){
+            return true
+        }
+        return false
+    }
+}
+
+
+// #28: Calculate the sum of first 100 prime numbers
