@@ -417,30 +417,30 @@
 
 // #27: Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
 
-let numbArr = [1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100] 
+// let numbArr = [1, 2, 3, 6, -1, 2, 9, 7, 10, -1, 100] 
 
-let data = getDistinctNumb(numbArr)
-    console.log("data ::",data);
+// const data = getNumbers(numbArr)
+// console.log("data ::",data)
 
-function getDistinctNumb(numbers){
-    // console.log("numbers",numbers);
-    let arr=[];
-    for(let j=0;j<numbers.length;j++){
-        if(isInArray(numbers[j],numbers)){
-            arr.push(numbers[j])
-        }
-    }
-    return numbers
-}
-function isInArray(n,ar){
-    // console.log("Values ::",n,ar);
-    for(let i = 0;i<ar.length;i++){
-        if(ar[i]===n){
-            return true
-        }
-        return false
-    }
-}
+// function getNumbers(num){
+//     let arr2=[];
+//     for(let i=0;i<num.length;i++){
+//         if(!getDistinct(num[i],arr2)){
+//             arr2.push(num[i])
+//         }
+//     }
+//     return arr2
+// }
 
+// function getDistinct(n,arr){
+//     for(let j=0;j<arr.length;j++){
+//         if(arr[j]===n){
+//             return true
+//         }
+//     }
+//     return false
+// }
 
 // #28: Calculate the sum of first 100 prime numbers
+
+
