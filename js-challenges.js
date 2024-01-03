@@ -444,3 +444,45 @@
 // #28: Calculate the sum of first 100 prime numbers
 
 
+// let n = 10;
+// console.log("Sum of first ", n, " primes is ", sumPrimes(10))
+
+// function sumPrimes(n){
+//     console.log(n,"start")
+//     let foundPrimes = 0;
+//     let i = 2;
+//     let sum = 0;
+//     while(foundPrimes < n)
+//     {
+//         if (get100Prime(i))
+//         {
+//             foundPrimes++;
+//             sum += i;
+//         }
+        
+//         i++;
+//     }
+    
+//     return sum;
+// }
+// function get100Prime(n){
+//     if (n < 2)
+//         return false;
+        
+//     if (n == 2)
+//         return true;
+    
+//     var maxDiv = Math.sqrt(n);
+//     // console.log(maxDiv,"asdf")
+    
+//     console.log(n, maxDiv,"adasdfsf")
+//     for(var i = 2; i <= maxDiv; i++){
+//         console.log("i is less,",i)
+//         if (n % i === 0)
+//         {
+//             return false;
+//         }
+//     }
+    
+//     return true;
+// }
