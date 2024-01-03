@@ -486,3 +486,6 @@
     
 //     return true;
 // }
+
+
+// #29: Print the distance between the first 100 prime numbers
